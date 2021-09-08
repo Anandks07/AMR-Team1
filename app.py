@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output, State
 
 
 app = dash.Dash()
-dataset = pd.read_csv('/home/anand/Downloads/NT.csv')                         # Give directory here
+dataset = pd.read_csv('NT.csv')                         # Give directory here
 df = dataset[['symbol','open','high','low','close','date']]
 dates = df['date']
 def str_to_date(string):
